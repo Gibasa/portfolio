@@ -1,0 +1,162 @@
+.about{
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 1vh 20px;
+}
+
+.side-bar{
+    height: 55vh;
+    width: 6px;
+    background-color: #0e08ff;
+    position:absolute;
+    right: 66%;
+    bottom: 20vh;
+}
+
+.avatar{
+    position: relative;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar img{
+    width:15VW;
+    z-index:2;
+    position: relative;
+}
+
+.avatar-bar{
+    width: 18vw;
+    height: 20px;
+    border: 2px solid #0e08ff;
+    position: absolute;
+    z-index: 1;
+}
+
+.avatar .top{
+    top: 0;
+}
+
+.avatar .bottom{
+    bottom: 0;
+}
+
+.socials{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0e08ff;
+    flex-direction: column;
+    width: 4vw;
+    height: 30vh;
+    padding-top: 40px;
+}
+
+.icon{
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: black;
+}
+
+.about-text{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vh;
+    width: 20vw;
+    top: 30vh;
+}
+
+.about-text h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 2%;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.about-text p{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.0rem;
+}
+
+.about-download {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.6s, color 0.6s, width 0.6s;
+    margin-top: 20px;
+    width: 20%;
+    left: 0;
+    bottom: 5%;
+    position: absolute;
+  }
+  
+  .download {
+    flex: 1;
+    padding: 5px 0px 5px 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: #0e08ff;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .links {
+    display: none;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    justify-content: space-around;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin: 2px;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .about-download.hovered .download{
+    color: white;
+    text-align: none;
+  }
+
+  .links a:hover{
+    color: black;
+  }
+  .about-download.hovered {
+    background-color: #0e08ff;
+    color: white;
+    width: 30%;
+    justify-content: space-around;
+  }
+  
+  .about-download.hovered .links {
+    display: flex;
+  }
+  
+  
+
+

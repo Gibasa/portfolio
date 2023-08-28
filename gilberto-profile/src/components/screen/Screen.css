@@ -1,0 +1,62 @@
+.screen {
+  right: 0;
+  width: 66vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-link {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  height: 13vh;
+  width: 20vw;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  border-bottom: 3px solid #0e08ff;
+  border-left: 3px solid #0e08ff;
+  border-right: 3px solid #0e08ff;
+  position: relative;
+  z-index: 2;
+  background-color: #0e08ff;
+  overflow: hidden;
+}
+.title{
+    z-index: 2;
+}
+
+.menu-link span {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+
+.menu-link.selected span {
+  transform: translatey(100%);
+
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
