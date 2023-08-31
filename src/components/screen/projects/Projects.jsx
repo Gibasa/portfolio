@@ -30,13 +30,24 @@ const data = [
 function Projects() {
   return (
     <div className="projects">
+      <div className="detalhes">
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+        <div className="detalhes-linha"></div>
+      </div>
       <div className="items">
         {data.map((item, index) => (
           <div
             key={index}
             className="item blue-mask"
             style={{ backgroundImage: `url(${item.screenshot})` }}
-          >
+          >            
             <div className="item-overlay">
               <h3> {item.title} </h3>
               <div className="item-btn">
