@@ -1,15 +1,16 @@
 .about{
-    width: 33vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
     height: 100vh;
     padding: 1vh 20px;
 }
 
 .side-bar{
     height: 55vh;
-    width: 6px;
+    width: 3px;
     background-color: #0e08ff;
     position:absolute;
     right: 66%;
@@ -17,34 +18,17 @@
 }
 
 .avatar{
-    position: relative;
-    width: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 2vh;
+    padding: 10px;
+    border: 3px solid #0e08ff;
 }
 
 .avatar img{
-    width:15VW;
-    z-index:2;
-    position: relative;
-}
-
-.avatar-bar{
-    width: 18vw;
-    height: 20px;
-    border: 2px solid #0e08ff;
-    position: absolute;
-    z-index: 1;
-}
-
-.avatar .top{
-    top: 0;
-}
-
-.avatar .bottom{
-    bottom: 0;
+    width:10VW;
 }
 
 .socials{
@@ -58,7 +42,6 @@
     flex-direction: column;
     width: 4vw;
     height: 30vh;
-    padding-top: 40px;
 }
 
 .icon{
@@ -72,21 +55,20 @@
 }
 
 .about-text{
-    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 18vh;
-    width: 20vw;
-    top: 30vh;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 90%;
 }
 
 .about-text h1{
     font-family: 'Bricolage Grotesque', sans-serif;
     margin: 2%;
     color: white;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
 }

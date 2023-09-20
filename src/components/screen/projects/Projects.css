@@ -2,6 +2,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: auto;
+  padding-right: 30px;
+  margin-left: 55px;
+}
+
+.items::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color: #0e08ff; 
+  border-radius: 4px; 
 }
 
 .item {
@@ -16,6 +31,7 @@
   position: relative;
   background-size: cover;
 }
+
 
 .blue-mask {
   position: relative;
@@ -33,7 +49,11 @@
 }
 
 .blue-mask:hover .item-overlay {
-  background-color: transparent;
+  transform: translateY(-100%);
+}
+
+.blue-mask:hover .item-btn{
+  transform: translateY(500%);
 }
 
 .item-overlay {
@@ -47,29 +67,29 @@
   height: 100%;
   padding: 20px;
   background-color: black;
-  transition: background-color 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
 .item-overlay h3 {
-  opacity: 1;
-  transition: opacity 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
 .item:hover .item-overlay h3 {
-  opacity: 0;
+  transform: translateY(-100%);
 }
 
 .item h3 {
   font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
-  width: 70%;
+  width: 85%;
 }
 
 .item-btn {
   width: 100%;
   display: flex;
+  transition: transform 0.8s;
 }
 
 .item-btn a {
@@ -95,19 +115,3 @@
     width:50%
 }
 
-.detalhes{
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  position: absolute;
-  bottom: 1vh;
-  right: 0;
-}
-
-.detalhes-linha{
-  border-top: 2px solid #0e08ff;
-  border-bottom: 2px solid #0e08ff;
-  border-left: 2px solid #0e08ff;
-  height: 2vh;
-  width: 4vw;
-}

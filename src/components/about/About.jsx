@@ -21,9 +21,7 @@ function About() {
     <div className="about">
       <div className="side-bar"></div>
       <div className="avatar">
-        <div className="avatar-bar top"></div>
         <img src="/images/PERFIL-GIBA.png" alt="" />
-        <div className="avatar-bar bottom"></div>
       </div>
       <div className="socials">
         <FontAwesomeIcon className="icon" icon={faGithub} />

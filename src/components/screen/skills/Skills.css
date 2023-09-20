@@ -1,0 +1,27 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #0e08ff;
+  margin: 15px 20px;
+  padding: 20px;
+  height: 20vh;
+  width: 20vh;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.skill-icon {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.skill-item h2 {
+  font-size: 2rem;
+}

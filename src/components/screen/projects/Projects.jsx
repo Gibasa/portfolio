@@ -25,22 +25,23 @@ const data = [
     github: "https://github.com/keeperapp",
     screenshot: "/images/screenshot-keeper.png",
   },
+  {
+    title: "KEEPER APP",
+    site: "https://keeperapp.com.br/",
+    github: "https://github.com/keeperapp",
+    screenshot: "/images/screenshot-keeper.png",
+  },
+  {
+    title: "KEEPER APP",
+    site: "https://keeperapp.com.br/",
+    github: "https://github.com/keeperapp",
+    screenshot: "/images/screenshot-keeper.png",
+  },
 ];
 
 function Projects() {
   return (
     <div className="projects">
-      <div className="detalhes">
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-        <div className="detalhes-linha"></div>
-      </div>
       <div className="items">
         {data.map((item, index) => (
           <div
