@@ -50,6 +50,8 @@ function Projects() {
             style={{ backgroundImage: `url(${item.screenshot})` }}
           >            
             <div className="item-overlay">
+            </div>
+            <div className="item-title-btn">
               <h3> {item.title} </h3>
               <div className="item-btn">
                 <a
@@ -69,7 +71,7 @@ function Projects() {
                   GITHUB
                 </a>
               </div>
-            </div>
+              </div>
           </div>
         ))}
       </div>

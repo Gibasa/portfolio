@@ -11,12 +11,12 @@
 }
 
 .items::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .items::-webkit-scrollbar-thumb {
-  background-color: #0e08ff; 
-  border-radius: 4px; 
+  background-color: #0e08ff;
+  border-radius: 4px;
 }
 
 .item {
@@ -32,6 +32,16 @@
   background-size: cover;
 }
 
+.item-title-btn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
 
 .blue-mask {
   position: relative;
@@ -52,8 +62,12 @@
   transform: translateY(-100%);
 }
 
-.blue-mask:hover .item-btn{
-  transform: translateY(500%);
+.blue-mask:hover .item-title-btn h3{
+  transform: translateY(-500%);
+}
+
+.blue-mask:hover .item-btn {
+  transform: translateY(0%);
 }
 
 .item-overlay {
@@ -78,40 +92,45 @@
   transform: translateY(-100%);
 }
 
-.item h3 {
+.item-title-btn h3 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
   width: 85%;
+  transition: transform 0.6s ease;
 }
 
 .item-btn {
   width: 100%;
   display: flex;
   transition: transform 0.8s;
+  position: relative;
+  z-index: 3;
 }
 
 .item-btn a {
-    display:inline-block; 
-    border:3px solid white; 
-    color:white; 
-    padding:10px; 
-    margin-right:10px; 
-    text-decoration:none; 
-    text-align:center; 
-    font-family:"Bricolage Grotesque", sans-serif; 
-    transition:background-color .5s color .5s ease; 
-    background-color:black; 
-    pointer-events:auto
+  display: inline-block;
+  border: 3px solid white;
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  transition-property: background-color, color;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  background-color: black;
 }
 
 .item-btn a:hover {
-    background-color:white; 
-    color:black
+  background-color: white;
+  color: black;
 }
 
 .btn {
-    width:50%
+  width: 50%;
 }
 
