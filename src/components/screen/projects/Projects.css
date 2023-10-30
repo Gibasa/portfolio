@@ -66,8 +66,9 @@
   transform: translateY(-500%);
 }
 
+
 .blue-mask:hover .item-btn {
-  transform: translateY(0%);
+  transform: translateY(40%);
 }
 
 .item-overlay {
@@ -98,7 +99,7 @@
   font-weight: 400;
   text-align: left;
   width: 85%;
-  transition: transform 0.6s ease;
+  transition: transform 0.8s ease;
 }
 
 .item-btn {

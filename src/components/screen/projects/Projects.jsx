@@ -24,19 +24,7 @@ const data = [
     site: "https://keeperapp.com.br/",
     github: "https://github.com/keeperapp",
     screenshot: "/images/screenshot-keeper.png",
-  },
-  {
-    title: "KEEPER APP",
-    site: "https://keeperapp.com.br/",
-    github: "https://github.com/keeperapp",
-    screenshot: "/images/screenshot-keeper.png",
-  },
-  {
-    title: "KEEPER APP",
-    site: "https://keeperapp.com.br/",
-    github: "https://github.com/keeperapp",
-    screenshot: "/images/screenshot-keeper.png",
-  },
+  }
 ];
 
 function Projects() {
