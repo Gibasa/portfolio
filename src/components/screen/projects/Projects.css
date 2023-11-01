@@ -135,3 +135,50 @@
   width: 50%;
 }
 
+@media (max-width: 1440px) {
+  .item-title-btn h3{
+    font-size: 1.5rem;
+  }
+
+  .item-btn a{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .item-title-btn h3{
+    font-size: 1.2rem;
+  }
+
+  .item-btn a{
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .item{
+    width: 220px;
+    height: 180px;
+  }
+  .item-title-btn{
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* regras para tablet */
+}
+
+@media (max-width: 530px) {
+  .items{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  /* regras para celular */
+}
+
+@media (max-width: 320px) {
+  /* regras para celular pequeno */
+}

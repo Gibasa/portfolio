@@ -117,3 +117,51 @@
   text-decoration: none;
   color: #0e08ff;
 }
+
+
+@media (max-width: 1140px) {
+  .screen{
+    width: 100%;
+  }
+  .menu-link{
+    font-size: 1.8rem;
+    width: 220px;
+    border-top: 3px solid #0e08ff;
+  }
+
+  .detalhes{
+    bottom: 5vh;
+  }
+  .copyright{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 80%;
+
+  }
+}
+
+@media (max-width: 575px) {
+  .detalhes{
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .detalhes{
+    display: none;
+  }
+  .menu-link{
+    font-size: 1.4rem;
+    width: 150px;
+    border-top: 3px solid #0e08ff;
+  }
+  .copyright{
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  /* regras para celular pequeno */
+}
