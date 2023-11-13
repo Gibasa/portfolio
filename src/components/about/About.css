@@ -206,8 +206,10 @@
  
 }
 
-@media (max-width: 490px) {
-  /* regras para celular grande */
+@media (max-width: 460px) {
+  .about{
+    width: 100vw;
+  }
 }
 
 @media (max-width: 375px) {

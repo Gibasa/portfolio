@@ -74,7 +74,7 @@ function Screen() {
         </TransitionGroup>
       </div>
       <div className="copyright">
-        <p>Copyright {yearnow()}. Gilberto Sá - Todos os direitos reservados. Design by <a href="https://biancaferreiradesign.com/" target="blank">Bianca Ferreira.</a></p>
+        <p>Copyright {yearnow()}. Gilberto Sá - All rights reserved. Design by <a href="https://biancaferreiradesign.com/" target="blank">Bianca Ferreira.</a></p>
       </div>
     </div>
   );
