@@ -20,10 +20,16 @@ const data = [
     screenshot: "https://gibasa.github.io/portfolio/images/COMING-SOON.png",
   },
   {
-    title: "App Financeiro",
+    title: "APP FINANCEIRO",
     site: "https://replit.com/@GilbertoSa/App-Financeiro",
     github: "https://github.com/Gibasa/app_financeiro",
     screenshot: "https://gibasa.github.io/portfolio/images/screenshot-app-financeiro.png",
+  },
+  {
+    title: "PASSWORD GENERATOR",
+    site: "https://replit.com/@GilbertoSa/Passwordgenerator",
+    github: "https://github.com/Gibasa/password_generator/tree/main",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-password-generator.png",
   }
 ];
 
