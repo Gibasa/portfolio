@@ -8,6 +8,7 @@
   width: auto;
   padding-right: 30px;
   margin-left: 55px;
+  background-size: cover;
 }
 
 .items::-webkit-scrollbar {

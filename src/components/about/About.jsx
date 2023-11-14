@@ -21,12 +21,12 @@ function About() {
     <div className="about">
       <div className="side-bar"></div>
       <div className="avatar">
-        <img src="/images/PERFIL-GIBA.png" alt="" />
+        <img src="" alt="" />
       </div>
       <div className="socials">
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-        <FontAwesomeIcon className="icon" icon={faWhatsapp} />
+        <a href="https://github.com/Gibasa" target="blank"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
+        <a href="https://www.linkedin.com/in/gilberto-sa/" target="blank"><FontAwesomeIcon className="icon" icon={faLinkedin} /></a>
+        <a href="https://wa.me/5571994066099" target="blank"><FontAwesomeIcon className="icon" icon={faWhatsapp} /></a>
       </div>
       <div className="about-text">
         <h1>GILBERTO SÁ</h1>
@@ -50,8 +50,8 @@ function About() {
       >
         <div className="download">CV DOWNLOAD</div>
         <div className="links">
-          <a href="">ENGLISH</a>
-          <a href="">PORTUGUÊS</a>
+          <a href="https://drive.google.com/file/d/1jWQFZst46FKEK3QMapmkOLruCdhApOPR/view?usp=drive_link" target="blank">ENGLISH</a>
+          <a href="https://drive.google.com/file/d/1F42p8vZe5o6qNfm6hRIypyuE8-hXOIy4/view?usp=drive_link" target="blank">PORTUGUÊS</a>
         </div>
       </div>
     </div>

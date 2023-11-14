@@ -3,27 +3,27 @@ import "./Projects.css";
 const data = [
   {
     title: "HOTEL RECANTO DOS CÓDIGOS",
-    site: "https://hotelrecantodoscodigos.com.br/",
-    github: "https://github.com/hotelrecantodoscodigos",
-    screenshot: "/images/screenshot-hotel-tex.png",
+    site: "https://gibasa.github.io/hotel-Tex/",
+    github: "https://github.com/Gibasa/hotel-Tex",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-hotel-tex.png",
   },
   {
     title: "3P ENERGIA",
-    site: "https://3penergia.com.br/",
-    github: "https://github.com/3penergia",
-    screenshot: "/images/screenshot-3p-energia.png",
+    site: "https://gibasa.github.io/3p-Energia/",
+    github: "https://github.com/Gibasa/3p-Energia",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-3p-energia.png",
   },
   {
     title: "SPACE TURISM",
-    site: "https://spacetourism.com.br/",
-    github: "https://github.com/spacetourism",
-    screenshot: "/images/COMING-SOON.png",
+    site: "",
+    github: "https://github.com/Gibasa/space-turism-website",
+    screenshot: "https://gibasa.github.io/portfolio/images/COMING-SOON.png",
   },
   {
-    title: "KEEPER APP",
-    site: "https://keeperapp.com.br/",
-    github: "https://github.com/keeperapp",
-    screenshot: "/images/screenshot-keeper.png",
+    title: "App Financeiro",
+    site: "https://replit.com/@GilbertoSa/App-Financeiro",
+    github: "https://github.com/Gibasa/app_financeiro",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-app-financeiro.png",
   }
 ];
 
