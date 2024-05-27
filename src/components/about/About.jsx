@@ -51,7 +51,7 @@ function About() {
         <div className="download">CV DOWNLOAD</div>
         <div className="links">
           <a href="https://drive.google.com/file/d/1PEWsGiHKGd6tqo6WswbgYDfY83ZzSkXP/view?usp=drive_link" target="blank">ENGLISH</a>
-          <a href="https://drive.google.com/file/d/1F42p8vZe5o6qNfm6hRIypyuE8-hXOIy4/view?usp=drive_link" target="blank">PORTUGUÊS</a>
+          <a href="https://drive.google.com/file/d/1skbjEcoVoGw4z-NFMANUEfJvT2Jc7nO7/view?usp=drive_link" target="blank">PORTUGUÊS</a>
         </div>
       </div>
     </div>

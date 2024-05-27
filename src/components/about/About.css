@@ -223,7 +223,9 @@
 }
 
 @media (max-width: 375px) {
-  /* regras para celular */
+  .side-bar{
+    display: none;
+  }
 }
 
 @media (max-width: 350px) {

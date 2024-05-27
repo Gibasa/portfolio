@@ -9,15 +9,15 @@ const data = [
   },
   {
     title: "3P ENERGIA",
-    site: "https://gibasa.github.io/3p-Energia/",
+    site: "https://3penergia.com.br/",
     github: "https://github.com/Gibasa/3p-Energia",
     screenshot: "https://gibasa.github.io/portfolio/images/screenshot-3p-energia.png",
   },
   {
-    title: "SPACE TURISM",
-    site: "",
-    github: "https://github.com/Gibasa/space-turism-website",
-    screenshot: "https://gibasa.github.io/portfolio/images/COMING-SOON.png",
+    title: "LUDMILA GARCIA",
+    site: "https://ludmilagarcia.com.br/",
+    github: "https://github.com/Gibasa/ludmila_garcia",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-ludmilagarcia.png",
   },
   {
     title: "APP FINANCEIRO",
@@ -54,7 +54,7 @@ function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  VER SITE
+                  LINK
                 </a>
                 <a
                   className="btn"

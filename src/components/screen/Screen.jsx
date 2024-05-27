@@ -1,7 +1,6 @@
 import "./Screen.css";
 import { useState } from "react";
 import Projects from "./projects/Projects";
-// Importe os componentes do React Transition Group
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Skills from "./skills/Skills";
 
