@@ -2,12 +2,6 @@ import "./Projects.css";
 
 const data = [
   {
-    title: "HOTEL RECANTO DOS CÓDIGOS",
-    site: "https://gibasa.github.io/hotel-Tex/",
-    github: "https://github.com/Gibasa/hotel-Tex",
-    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-hotel-tex.png",
-  },
-  {
     title: "3P ENERGIA",
     site: "https://3penergia.com.br/",
     github: "https://github.com/Gibasa/3p-Energia",
@@ -18,6 +12,18 @@ const data = [
     site: "https://ludmilagarcia.com.br/",
     github: "https://github.com/Gibasa/ludmila_garcia",
     screenshot: "https://gibasa.github.io/portfolio/images/screenshot-ludmilagarcia.png",
+  },
+  {
+    title: "SPACE APP",
+    site: "https://gibasa.github.io/space-turism-website/",
+    github: "https://github.com/Gibasa/space-turism-website",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-spaceapp.png",
+  },
+  {
+    title: "HOTEL RECANTO DOS CÓDIGOS",
+    site: "https://gibasa.github.io/hotel-Tex/",
+    github: "https://github.com/Gibasa/hotel-Tex",
+    screenshot: "https://gibasa.github.io/portfolio/images/screenshot-hotel-tex.png",
   },
   {
     title: "APP FINANCEIRO",
