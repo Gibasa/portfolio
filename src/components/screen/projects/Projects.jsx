@@ -2,18 +2,56 @@ import "./Projects.css";
 
 const data = [
   {
+    title: "BIANCA FERREIRA DESIGN",
+    site: "https://www.biancaferreiradesign.com/",
+    github: "https://github.com/Gibasa/bianca-ferreira-design",
+    screenshot: "./images/screenshot-bianca.png",
+    techs: [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "REACT",
+      "STYLED COMPONENTS",
+      "I18N",
+      "MATERIAL UI",
+    ],
+  },
+  {
+    title: "COPARTNERS BANK",
+    site: "https://3penergia.com.br/",
+    github: "https://github.com/Gibasa/cpt-bank",
+    screenshot: "./images/screenshot-cpt.png",
+    techs: [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "REACT",
+      "STYLED COMPONENTS",
+      "MATERIAL UI",
+    ],
+  },
+
+  {
     title: "3P ENERGIA",
     site: "https://3penergia.com.br/",
     github: "https://github.com/Gibasa/3p-Energia",
     screenshot: "./images/screenshot-3p-energia.png",
     techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "BOOTSTRAP"],
   },
+
   {
     title: "LUDMILA GARCIA",
     site: "https://ludmilagarcia.com.br/",
     github: "https://github.com/Gibasa/ludmila_garcia",
     screenshot: "./images/screenshot-ludmilagarcia.png",
     techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "BOOTSTRAP"],
+  },
+  {
+    title: "SITE VENDAS",
+    site: "https://vendas-bice.vercel.app/",
+    github: "https://github.com/Gibasa/vendas",
+    screenshot: "./images/screenshot-vendas.png",
+    techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "STYLED COMPONENTS"],
   },
   {
     title: "SPACE APP",
@@ -73,7 +111,7 @@ function Projects() {
             <div className="item-overlay"></div>
             <div className="item-title-btn">
               <h3> {item.title} </h3>
-              <img alt="tap here"/>
+              <img alt="tap here" />
               <div className="item-btn">
                 <a
                   className="btn"
