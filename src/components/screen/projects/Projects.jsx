@@ -18,7 +18,7 @@ const data = [
   },
   {
     title: "COPARTNERS BANK",
-    site: "https://3penergia.com.br/",
+    site: "https://cpt-bank.onrender.com/",
     github: "https://github.com/Gibasa/cpt-bank",
     screenshot: "./images/screenshot-cpt.png",
     techs: [
