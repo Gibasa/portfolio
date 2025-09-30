@@ -63,13 +63,13 @@ function About() {
         <div className="download">CV DOWNLOAD</div>
         <div className="links">
           <a
-            href="https://drive.google.com/file/d/1Ujuv0gsBtH_k5Yvyp-r1co4P5-_bfB6_/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1T3MGyOyrtdr1fL1b2pB-jClMb3EiRolK/view?usp=sharing"
             target="blank"
           >
             ENGLISH
           </a>
           <a
-            href="https://drive.google.com/file/d/17XPjWvLp5ahzCoxgTd2TDVeYXPUgjFHE/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1cXkDOfLGUZ7RK0CcyPBxaaBpKQ0cGCuS/view?usp=sharing"
             target="blank"
           >
             PORTUGUÊS
