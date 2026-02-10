@@ -47,7 +47,8 @@
   width: 50px;
   height: 30vh;
 }
-.socials a{
+
+.socials a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +91,49 @@
   width: 100%;
   font-size: 0.8rem;
 }
+
+.about-text h2 {
+  font-family: "Roboto Mono", monospace;
+  background-color: white;
+  color: #0e08ff;
+  font-size: 0.9rem;
+  /* Slightly smaller to fit if needed */
+  margin: 10px 0 20px 0;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 15px;
+  width: fit-content;
+  /* Wrap text */
+  max-width: 90%;
+  /* No border or shadow mentioned, but mimicking .about-download plain white look */
+}
+
+.cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Center the button */
+  margin-top: 20px;
+}
+
+.cta-button {
+  text-decoration: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  border: 2px solid #0e08ff;
+  color: white;
+  background-color: #0e08ff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #0e08ff;
+}
+
 
 .about-download {
   background-color: white;
@@ -136,6 +180,7 @@
 .links a:hover {
   color: black;
 }
+
 .about-download.hovered {
   background-color: #0e08ff;
   color: white;
@@ -161,8 +206,9 @@
     left: auto;
     right: auto;
     bottom: 40px;
-    
+
   }
+
   .about-download {
     left: auto;
     bottom: auto;
@@ -170,15 +216,18 @@
     right: 0;
     transition: background-color 0.6s, color 0.6s, height 0.6s;
   }
+
   .about-download.hovered {
     height: 18%;
     width: 20%;
     justify-content: center;
     flex-direction: column;
   }
+
   .about-download.hovered .links {
     display: flex;
   }
+
   .about-download.hovered .download {
     text-align: center;
   }
@@ -188,43 +237,45 @@
   }
 }
 
-@media (max-width: 768px) { 
-  .about-download{
+@media (max-width: 768px) {
+  .about-download {
     width: 150px;
-  transition: background-color 0.6s, color 0.6s, height 0.6s;
+    transition: background-color 0.6s, color 0.6s, height 0.6s;
   }
 
-  .about-download .download{
+  .about-download .download {
     padding: 0;
   }
 
-  .about-download.hovered .download{
+  .about-download.hovered .download {
     padding: 0 0 20px 0;
   }
-  .about-download.hovered{
+
+  .about-download.hovered {
     width: 150px;
     height: auto;
   }
-  .about-download.hovered .download{
+
+  .about-download.hovered .download {
     height: auto;
   }
 
-  .about-download.hovered .links{
+  .about-download.hovered .links {
     flex-direction: column;
     gap: 10px;
   }
 
- 
+
 }
 
 @media (max-width: 460px) {
-  .about{
+  .about {
     width: 100vw;
   }
 }
 
 @media (max-width: 375px) {
-  .side-bar{
+  .side-bar {
     display: none;
   }
 }

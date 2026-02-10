@@ -36,24 +36,26 @@ function About() {
       </div>
       <div className="about-text">
         <h1>GILBERTO SÁ</h1>
-        <p>Hello, welcome! {"I'm"} a passionate Front-End Developer. </p>{" "}
+        <h2>Front-End React Developer | EU Citizen | Remote-Ready</h2>
         <p>
-          {" "}
-          With a strong focus on HTML, CSS, JavaScript, React, Styled
-          Components, and Material UI, I’m committed to creating responsive,
-          modern, and user-friendly websites and applications.{" "}
-        </p>{" "}
-        <p>
-          {" "}
-          My journey in Software Development is driven by the continuous pursuit
-          of growth and learning. I thrive on new challenges and aim to deliver
-          high-quality solutions that meet both user needs and business goals.{" "}
-        </p>{" "}
-        <p>
-          {" "}
-          {"Let's"} connect and explore how I can help bring your digital
-          projects to life!
+          Building High-Performance Web Experiences for Global Businesses.
         </p>
+        <p>
+          I specialize in creating modern, responsive, and SEO-optimized web applications
+          that drive results. With a strong focus on React, Tailwind, and Supabase,
+          I help companies and clients turn their digital vision into reality.
+        </p>
+        <p>
+          Whether you need a high-converting landing page, a complex web app, or
+          automation/integration services, I deliver quality code and exceptional user experiences.
+        </p>
+
+        <div className="cta-container">
+          {/* We can use a simple anchor tag for now, or a Link if using router later */}
+          <a href="https://wa.me/5571994066099" target="_blank" rel="noreferrer" className="cta-button primary">
+            Contact Me
+          </a>
+        </div>
       </div>
       <div
         className={`about-download ${hovered ? "hovered" : ""}`}

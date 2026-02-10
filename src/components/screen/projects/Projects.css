@@ -1,16 +1,37 @@
-.items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 20px;
-  max-height: 70vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: auto;
-  padding-right: 30px;
-  margin-left: 55px;
-  background-size: cover;
+.projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align top so list starts at top */
 }
 
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 20vw);
+  /* Strict 20vw columns */
+  gap: 40px;
+  /* Match menu gap */
+
+  width: fit-content;
+  /* Shrink container to bring scrollbar close */
+  margin: 8vh auto 0 auto;
+  /* Top margin to align with hero text, centered horizontally */
+
+  max-height: 60vh;
+  /* Restrict height so scrollbar doesn't hit bottom */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* 60px right padding to push scrollbar away.
+     68px left padding (60px + 8px scrollbar) to strictly center the grid content
+     relative to the menu buttons above */
+  padding: 10px 60px 20px 68px;
+  box-sizing: border-box;
+}
+
+/* Scrollbar styles remain the same */
 .items::-webkit-scrollbar {
   width: 8px;
 }
@@ -20,17 +41,83 @@
   border-radius: 4px;
 }
 
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  /* Fill the grid cell */
+}
+
 .item {
   border: 3px solid #0e08ff;
   color: white;
   padding: 0;
-  margin: 20px;
-  width: 20vw;
-  height: 14vw;
+  width: 100%;
+  /* Fill wrapper */
+  height: auto;
+  aspect-ratio: 2/1;
+  /* Matched to verified image dims (1820x910) to prevent distortion */
   display: flex;
   overflow: hidden;
   position: relative;
-  background-size: cover;
+  background-size: 100% 100%;
+  /* Force image to fit exactly without cropping */
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+/* Remove default blue mask */
+.blue-mask::before {
+  display: none;
+}
+
+/* Darken image slightly on hover for text readability */
+.item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* Transparent by default */
+  transition: background-color 0.3s ease;
+  z-index: 0;
+}
+
+.item:hover::after {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.item-techs {
+  display: flex;
+  position: absolute;
+  top: -100%;
+  /* Hidden above */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
+  transition: top 0.4s ease;
+  z-index: 2;
+  justify-content: center;
+}
+
+.item:hover .item-techs {
+  top: 0;
+  /* Slide down */
+}
+
+.item-techs h3 {
+  font-size: 0.6rem;
+  background-color: black;
+  font-family: "Bricolage Grotesque", sans-serif;
+  border: 1px solid white;
+  padding: 3px 6px;
+  color: white;
 }
 
 .item-title-btn {
@@ -38,108 +125,57 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
+  /* Align title/buttons to bottom */
   align-items: center;
   padding: 20px;
-  z-index: 1;
-}
-
-.item-title-btn img {
-  content: url("/images/hand-tap blue.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 25px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: none;
-}
-
-.blue-mask {
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 
-.blue-mask::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(14, 8, 255, 0.5);
-  z-index: 0;
-}
-
-.blue-mask:hover .item-overlay {
-  transform: translateY(-100%);
-}
-
-.blue-mask:hover .item-title-btn h3 {
-  transform: translateY(-500%);
-}
-
-.blue-mask:hover .item-btn {
-  transform: translateY(40%);
-}
-
-.blue-mask:hover .item-techs {
-  transform: translatey(0%);
-}
-
-.item-overlay {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  background-color: black;
-  transition: transform 0.6s ease;
-}
-
-.item-overlay h3 {
-  transition: transform 0.6s ease;
-}
-
-.item:hover .item-overlay h3 {
-  transform: translateY(-100%);
-}
-
-.item-title-btn h3 {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-align: left;
-  width: 85%;
-  transition: transform 0.8s ease;
-}
 
 .item-btn {
-  width: 100%;
   display: flex;
-  transition: transform 0.8s;
-  position: relative;
-  z-index: 3;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  transform: translateY(100px);
+  /* Hidden below by default or just use opacity/height logic? User said "desce" (descend) but typically buttons are at bottom. Let's make them slide in. */
+  opacity: 0;
+  transition: all 0.4s ease;
+  height: 0;
+  /* Collapse height */
+}
+
+/* Modify "desce" logic: User said "desce" (go down). 
+   If they are at the top, they should go down. 
+   If they are hidden, maybe they slide down from the middle? 
+   Let's interpret "desce" as "slide into view". 
+   Actually, standard "drop down" usually implies coming from top. 
+   Let's try: Techs come from top. Buttons come from top? Or just appear?
+   Let's make buttons slide UP from bottom or DOWN from top? 
+   "Desce" = Down. So maybe everything comes from top? */
+
+/* Re-interpreting: "Desce as caixas... e botoes" -> Everything slides down from top? */
+/* Let's keep buttons at bottom but nice animation. */
+
+.item:hover .item-btn {
+  transform: translateY(0);
+  opacity: 1;
+  height: auto;
+  margin-top: 10px;
 }
 
 .item-btn a {
   display: inline-block;
-  border: 3px solid white;
+  border: 2px solid white;
   color: white;
-  padding: 10px;
-  margin: 0 10px;
-  text-decoration: none;
-  text-align: center;
-  font-family: "Bricolage Grotesque", sans-serif;
-  transition-property: background-color, color;
-  transition-duration: 0.5s, 0.5s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   background-color: black;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.8rem;
+  transition: all 0.3s;
 }
 
 .item-btn a:hover {
@@ -147,72 +183,51 @@
   color: black;
 }
 
-.btn {
-  width: 50%;
+/* Tap Icon - Hidden on desktop */
+.tap-icon {
+  display: none;
+  width: 24px;
+  margin-top: 10px;
+  animation: tap-bounce 1.5s infinite;
 }
 
-.item-techs {
-  display: flex;
-  position: absolute;
-  top: 10px;
-  left: 7px;
-  gap: 5px;
-  transition: top 0.6s ease;
-  width: 90%;
-  flex-wrap: wrap;
-}
+@keyframes tap-bounce {
 
-.item-techs h3 {
-  font-size: 0.5rem;
-  text-align: end;
-  background-color: black;
-  font-family: "Bricolage Grotesque", sans-serif;
-  border: 3px solid white;
-  padding: 5px;
-}
-
-@media (max-width: 1440px) {
-  .item-title-btn h3 {
-    font-size: 1.5rem;
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
-  .item-btn a {
-    font-size: 0.8rem;
+  50% {
+    transform: translateY(-5px);
   }
 }
 
-@media (max-width: 1280px) {
-  .item-title-btn h3 {
-    font-size: 1.2rem;
-  }
-
-  .item-btn a {
-    font-size: 0.6rem;
-  }
+/* Hide description for now as it wasn't mentioned in "always visible" plan, 
+   but we can make it appear if needed. 
+   The user seemingly wants a cleaner visual with just image first. */
+.item-overlay,
+.project-description {
+  display: none;
 }
+
 
 @media (max-width: 1140px) {
   .item {
-    width: 255px;
-    height: 180px;
+    height: 200px;
+    /* Fixed height for tablet/smaller screens */
   }
-  .item-title-btn {
-    padding: 10px 0;
-    align-items: flex-start;
-  }
-  .item-title-btn h3 {
-    width: 70%;
-    margin-left: 10px;
-  }
-
-  
 }
 
 @media (max-width: 530px) {
   .items {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0 10px;
   }
-  .item-title-btn img {
+
+  .tap-icon {
     display: block;
+    /* Show only on mobile */
   }
 }

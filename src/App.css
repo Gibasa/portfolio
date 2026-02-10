@@ -12,14 +12,29 @@
 }
 
 @media (max-width: 1140px) {
-    * {
-      overflow-y: scroll;
-      overflow-x: scroll;
-    }
+
+  /* Remove aggressive wildcard scroll */
+  * {
+    overflow-y: visible;
+    overflow-x: visible;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Allow main Page scroll */
+  }
+
   .app {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Start from top */
     align-items: center;
+    height: auto;
+    /* Allow app to grow */
+    min-height: 100vh;
+    overflow-y: visible;
   }
 }
 

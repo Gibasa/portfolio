@@ -21,19 +21,18 @@ function Screen() {
     <div className="screen">
       <div className="menu">
         <div
-          className={`menu-link ${
-            selectedLink === "projects" ? "selected" : ""
-          }`}
+          className={`menu-link ${selectedLink === "projects" ? "selected" : ""
+            }`}
           onClick={() => handleLinkClick("projects")}
         >
           <div className="title">PROJECTS</div>
-            <span></span>
+          <span></span>
         </div>
         <div
           className={`menu-link ${selectedLink === "skills" ? "selected" : ""}`}
           onClick={() => handleLinkClick("skills")}
         >
-            <span></span>
+          <span></span>
           <div className="title">SKILLS</div>
         </div>
       </div>
@@ -49,7 +48,7 @@ function Screen() {
         <div className="detalhes-linha"></div>
       </div>
       <div className="content">
-        <TransitionGroup>
+        <TransitionGroup className="transition-group">
           {selectedLink === "projects" && (
             <CSSTransition
               key="projects"
@@ -67,7 +66,7 @@ function Screen() {
               classNames="slide-up"
               unmountOnExit
             >
-              <Skills/>
+              <Skills />
             </CSSTransition>
           )}
         </TransitionGroup>
